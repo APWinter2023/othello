@@ -32,7 +32,7 @@ class MyPanel extends JPanel {
             public void mousePressed(MouseEvent me) {
                 MyPanel panel = MyPanel.getInstance();
                 int windowWidth = panel.getWidth() - 5;
-                int windowHeight = panel.getHeight() - 5;
+                int windowHeight = panel.getHeight() - 20;
                 int x = me.getX() / (windowWidth / rowCount);
                 int y = me.getY() / (windowHeight / colCount);
                 if (x >= rowCount || y >= rowCount) {
